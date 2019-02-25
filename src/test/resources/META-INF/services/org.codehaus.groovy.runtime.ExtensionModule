@@ -1,0 +1,4 @@
+moduleName=presentation
+moduleVersion=1
+extensionClasses=ca.bnc.studio.slides.component.Extensions
+staticExtensionClasses=
