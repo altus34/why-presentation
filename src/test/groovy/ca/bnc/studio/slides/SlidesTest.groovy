@@ -82,31 +82,17 @@ class SlidesTest {
 
         //
 
-
-
         // Toujours questionner.....
-        // LEver les flags
+        // Lever les flags
         // Identifier les problemes
 
         // Design by committee
-
-
-
-
-
-
-
+//        Expérience de Asch
 
 //        current.should { have }
 //        Slide current =  presentation().slide("Title")
 //        current.should { have title("AAA BBB")}
 
         current = presentation().slide("Team")
-
-
-
-
-
-
     }
 }
