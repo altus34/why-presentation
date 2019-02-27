@@ -18,9 +18,17 @@ class Factory {
                 return $('#slide_1') as SlideTitle
             case 2:
                 return $('#slide_2') as SlideTitle
+            case 10:
+                return $('#slide_10') as SlideTitle
+            case 13:
+                return $('#slide_13') as SlideTitle
+            case 14:
+                return $('#slide_14') as SlideTitle
+            case 18:
+                return $('#slide_18') as SlideTitle
 
             default:
-                return $('#slide_${i -1}') as Slide
+                return $('#slide_${i}') as Slide
         }
     }
 
@@ -30,6 +38,10 @@ class Factory {
 
     static Image pepe() {
         $("#pepe") as Img
+    }
+
+    static Image pepeOnViagra() {
+        $("#pepe_viagra") as Img
     }
 
     static Image speedy() {
@@ -48,13 +60,24 @@ class Factory {
         $("#porky") as Img
     }
 
-
-
-    static Image simpleDdevopsImage() {
-        $("#devops_1") as Img
+    static Image target() {
+        $("#target") as Img
     }
 
-    static Image fullDevopsImage() {
-        $("#devops_2") as Img
+    static Image devops() {
+        $("#devops") as Img
     }
+
+    static Image quizTime() {
+        $("#quiz") as Img
+    }
+
+    static Image attack() {
+        $("#attack") as Img
+    }
+
+
+
+
+
 }
