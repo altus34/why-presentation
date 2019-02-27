@@ -106,7 +106,6 @@ class Factory {
         $("#beluga_1") as Img
     }
 
-
     static Image beluga_2() {
         $("#beluga_2") as Img
     }
