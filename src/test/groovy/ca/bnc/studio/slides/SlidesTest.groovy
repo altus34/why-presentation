@@ -51,7 +51,7 @@ class SlidesTest {
     @Test
     @DisplayName("Presentation should have expected number of slides")
     void expected() {
-        presentation().should { have 26.slides }
+        presentation().should { have 27.slides }
     }
 
     @Test
