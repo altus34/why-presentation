@@ -51,66 +51,66 @@ class SlidesTest {
     @Test
     @DisplayName("Presentation should have expected number of slides")
     void expected() {
-        presentation().should { have 10.slides }
+        presentation().should { have 26.slides }
     }
 
     @Test
     @DisplayName("Slide 1 - should display presentation title")
-    void slide1() {
+    void slide01() {
         slide(1).should { have title("#OueskonVa #KeskonFait")}
     }
 
     @Test
     @DisplayName("Slide 2 - should be the TEAM introduction")
-    void slide2() {
+    void slide02() {
         slide(2).should { have title("#Team")}
     }
 
     @Test
     @DisplayName("Slide 3 - should present JF")
-    void slide3() {
+    void slide03() {
         slide(3)
         taz().should { be visible }
     }
 
     @Test
     @DisplayName("Slide 4 - should present Christian")
-    void slide4() {
+    void slide04() {
         slide(4)
         pepe().should { be visible }
     }
 
     @Test
     @DisplayName("Slide 5 - should present David step 1")
-    void slide5() {
+    void slide05() {
         slide(5)
         speedy().should { be visible }
     }
 
     @Test
     @DisplayName("Slide 6 - should present David step 2")
-    void slide6() {
+    void slide06() {
         slide(6)
         droopy().should { be visible }
     }
 
     @Test
     @DisplayName("Slide 7 - should present Christian")
-    void slide7() {
+    void slide07() {
         slide(7)
         pepeOnViagra().should { be visible }
     }
 
     @Test
     @DisplayName("Slide 8 - should present Paule")
-    void slide8() {
+    void slide08() {
         slide(8)
         granny().should { be visible }
     }
 
     @Test
     @DisplayName("Slide 9 - should present Nicolas")
-    void slide9() {
+    void slide09() {
         slide(9)
         porky().should { be visible }
     }
@@ -170,54 +170,59 @@ class SlidesTest {
     void slide18() {
         slide(18).should { have title("#Change Culture")}
     }
-//
-//    @Test
-//    @DisplayName("Slide 16 - should display Plane")
-//    void slide16() {
-//        slide(16)
-//        plane().should { be visible }
-//    }
-//
-//    @Test
-//    @DisplayName("Slide 17 - Why")
-//    void slide17() {
-//        slide(17).should { have title("#WHY ?")}
-//    }
-//
-//    @Test
-//    @DisplayName("Slide 18 - Why")
-//    void slide18() {
-//        slide(18)
-//        train().should { be visible }
-//    }
-//
-//    @Test
-//    @DisplayName("Slide 19 - Why")
-//    void slide19() {
-//        slide(19)
-//        tunnel().should { be visible }
-//    }
-//
-//    @Test
-//    @DisplayName("Slide 20 - Why")
-//    void slide20() {
-//        slide(20).should { have title("#WHY ?")}
-//    }
 
+    @Test
+    @DisplayName("Slide 19 - should display Plane")
+    void slide19() {
+        slide(19).should { have title("#Gateway")}
+        plane().should { be visible }
+    }
 
+    @Test
+    @DisplayName("Slide 20 - Why")
+    void slide20() {
+        slide(20).should { have title("#Why?")}
+    }
 
+    @Test
+    @DisplayName("Slide 21 - Train")
+    void slide21() {
+        slide(21)
+        train().should { be visible }
+    }
 
-    // WHY ?
+    @Test
+    @DisplayName("Slide 22 - Tunnel")
+    void slide22() {
+        slide(22)
+        tunnel().should { be visible }
+    }
 
+    @Test
+    @DisplayName("Slide 23 - Why")
+    void slide23() {
+        slide(23).should { have title("#Why?")}
+    }
 
+    @Test
+    @DisplayName("Slide 24 - Horses")
+    void slide24() {
+        slide(24)
+        horses().should { be visible }
+    }
 
+    @Test
+    @DisplayName("Slide 25 - Plane on train")
+    void slide25() {
+        slide(25)
+        planeOnTrain().should { be visible }
+    }
 
-        // Legacy
-        // L'important c'est le WHY
-        // Toujours questionner.....
-        // Lever les flags
-        // Identifier les problemes
-
-        // Design by committee
-        //  Expérience de Asch
+    @Test
+    @DisplayName("Slide 26 - Plane on train")
+    void slide26() {
+        slide(26)
+        beluga_1().should { be visible }
+        beluga_2().should { be visible }
+    }
 }

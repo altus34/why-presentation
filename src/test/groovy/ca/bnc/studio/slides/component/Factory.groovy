@@ -26,6 +26,12 @@ class Factory {
                 return $('#slide_14') as SlideTitle
             case 18:
                 return $('#slide_18') as SlideTitle
+            case 19:
+                return $('#slide_19') as SlideTitle
+            case 20:
+                return $('#slide_20') as SlideTitle
+            case 23:
+                return $('#slide_23') as SlideTitle
 
             default:
                 return $('#slide_${i}') as Slide
@@ -76,8 +82,32 @@ class Factory {
         $("#attack") as Img
     }
 
+    static Image plane() {
+        $("#plane") as Img
+    }
+
+    static Image train() {
+        $("#train") as Img
+    }
+
+    static Image tunnel() {
+        $("#tunnel") as Img
+    }
+
+    static Image horses() {
+        $("#horses") as Img
+    }
+
+    static Image planeOnTrain() {
+        $("#plane-on-train") as Img
+    }
+
+    static Image beluga_1() {
+        $("#beluga_1") as Img
+    }
 
 
-
-
+    static Image beluga_2() {
+        $("#beluga_2") as Img
+    }
 }
