@@ -15,6 +15,6 @@ class Presentation extends Component implements SlideSupport {
 
     @Override
     Slide slide(String value) {
-        return null
+        throw new UnsupportedOperationException()
     }
 }
